@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser</title>
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/browser.css" rel="stylesheet">
+  <link href="./css/iconfont/iconfont.css" rel="stylesheet">
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./js/dropdown.js"></script>
+  <script src="./js/alert.js"></script>
+  <script type="text/javascript" src="./js/search.js"></script>   
+</head>
+<body>  
+  <header>
+    <nav>
+      <h3>
+        <div class="div-left">
+          <a href="./home.html">
+           <img src="../img/logo1.png" width="50">
+          </a>
+          <a href="./home.html">Home</a>
+          <a href="./browser.html" id="current">Browser</a>
+          <a href="./search.html">Search</a>
+        </div>
+      </h3>          
+      <div class="wrap">
+        <h3><a href="#">My account</a></h3>
+          <ul class="dropdown-menu">
+            <li><i class="iconfont icon-shangchuan"></i><a href="./upload.html">Upload</a></li>
+            <li><i class="iconfont icon-picture"></i><a href="./myphoto.html">My Photo</a></li>
+            <li><i class="iconfont icon-shoucang"></i><a href="./myfavorite.html">My Favorite</a></li>
+            <li><i class="iconfont icon-denglu"></i><a href="../index.html">Log In</a></li>
+          </ul>      
+      </div>
+    </nav>    
+  </header>
+  <aside>
+    <div class="search">
+      <input type="text" placeholder="Search by title" >
+      <button type="button" name="search" onclick="display_alert()">
+      <i class="iconfont icon-sousuo"></i>
+      </button>
+    </div>
+    <div class="Hot">
+    <div class="title">Hot Content</div>
+      <hr>
+      <ul>
+        <li><a href="#">Scenary</a></li>
+        <li><a href="#">City</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">Animal</a></li>
+        <li><a href="#">Building</a></li>
+        <li><a href="#">Wonder</a></li>
+      </ul>
+    </div>
+    <div class="Hot">
+      <div class="title">Hot Country</div>
+      <hr>
+      <ul>
+        <li><a href="#">China</a></li>
+        <li><a href="#">Italy</a></li>
+        <li><a href="#">Japan</a></li>
+        <li><a href="#">America</a></li>
+      </ul>
+    </div>
+    <div class="Hot">
+      <div class="title">Hot City</div>
+      <hr>
+      <ul>
+        <li><a href="#">Shanghai</a></li>
+        <li><a href="#">Tokyo</a></li>
+        <li><a href="#">Roma</a></li>
+        <li><a href="#">New York</a></li>
+      </ul>
+    </div>         
+  </aside>    
+  <div class="contents">
+  	<div class="Fliter">
+      <div class="title1">Fliter</div>
+      <hr>
+        <form method="get" action="#">
+          <label>Content</label>
+          <select id="content">
+      	    <option value="scenary">Scenary</option>
+      	    <option value="city">City</option>
+      	    <option value="people">People</option>
+      	    <option value="animal">Animal</option>
+      	    <option value="building">Building</option>
+      	    <option value="wonder">Wonder</option>
+          </select>
+          <label>Country</label>
+          <select onchange="changeCity(this.value)">
+            <option value="0">China</option>
+            <option value="1">Japan</option>
+            <option value="2">Italy</option>
+            <option value="3">America</option>
+          </select>
+          <label>City</label>
+          <select id="city">
+          </select>
+          <input type="submit" value="Fliter" onclick="display_alert()">
+        </form>
+        <hr>  
+    </div>
+    <div class="img">
+      <a href ="./details.html">
+      <img src="../img/normal/small/222222.jpg" alt="image1">
+      <img src="../img/normal/small/9504451722.jpg" alt="image2">
+      <img src="../img/normal/small/5855191275.jpg" alt="image3">
+      <img src="../img/normal/small/5855209453.jpg" alt="image4">
+      <img src="../img/normal/small/6592294487.jpg" alt="image5">
+      <img src="../img/normal/small/6592317633.jpg" alt="image6">
+      <img src="../img/normal/small/6592902825.jpg" alt="image7">
+      <img src="../img/normal/small/6119130918.jpg" alt="image8">
+      <img src="../img/normal/small/8152020963.jpg" alt="image9">
+      <img src="../img/normal/small/8710247776.jpg" alt="image10">
+      <img src="../img/normal/small/8710289254.jpg" alt="image11">
+      <img src="../img/normal/small/8710320515.jpg" alt="image12">
+      <img src="../img/normal/small/8711645510.jpg" alt="image13">
+      <img src="../img/normal/small/9493997865.jpg" alt="image14">
+      <img src="../img/normal/small/9496560520.jpg" alt="image15">
+      <img src="../img/normal/small/9498381010.jpg" alt="image16">
+      </a>	
+    </div>
+    <div class="page">
+      <a href="#"><i class="iconfont icon-zuizuo"></i></a>
+      <a href="#">1</a> 
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">... 9</a>
+      <a href="#"><i class="iconfont icon-zuiyou"></i></a>
+    </div>  
+  </div>
+  <footer>
+    <div class="copyright">
+      <img src="../img/logo1.png" width="70px">
+      <span class="copyrighttxt">Copyright © 2020 Alyssa. All Rights Reserved. 备案号：沪ICP备18307110513号</span>
+    </div>
+  </footer>  
+</body>
+</html>
+
+

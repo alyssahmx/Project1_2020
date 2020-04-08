@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/register.css" rel="stylesheet">
+    <title>register</title>
+  </head>
+  <body>
+  	<header>
+  	  <img src="../img/logo1.png" width="90">
+      <h3>Sign up</h3>
+  	</header>
+    <section>
+  	  <form method="get" action="../index.html">
+        <p>
+      	  <span class="title">Username</span><br>
+          <input type="text" name="name" pattern="^[0-9a-zA-Z]{4,15}$" placeholder="4-15位大小写字母或数字" required>
+        </p>
+        <p>
+          <span class="title">E-mail</span><br>
+          <input type="email" name="email" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" placeholder="请正确填写邮箱地址" required>
+        </p>
+        <p>
+          <span class="title">Password</span><br>
+          <input type="password" name="password" pattern="^[a-zA-z0-9]{,8}$" minlength="8" placeholder="8位以上大小写字母或数字" required>	
+        </p>
+        <p>
+          <span class="title">Confirm Your Password</span><br>
+          <input type="password" name="repassword" pattern="^[a-zA-z0-9]{,8}$" minlenth="8" placeholder="8位以上大小写字母或数字" required>
+        </p>   
+        <p>
+          <input type="submit" value="Sign up">
+        </p>  
+      </form>
+    </section>
+    <footer>
+    <div class="copyright">
+      <img src="../img/logo1.png" width="70px">
+      <span class="copyrighttxt">Copyright © 2020 Alyssa. All Rights Reserved. 备案号：沪ICP备18307110513号</span>
+    </div>
+  </footer>  
+  </body>
+</html>    	
