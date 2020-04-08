@@ -154,7 +154,7 @@ footer{
     top: 10px;
 }
 
-@media only screen and (min-width: 640px) and (max-width: 1200px) {
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
     .t{
         position: absolute;
         right: 0.5em;
